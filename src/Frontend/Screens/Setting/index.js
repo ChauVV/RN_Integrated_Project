@@ -22,8 +22,10 @@ export default class Setting extends Component {
       >
         <ScrollView contentContainerStyle={styles.container}>
           <ItemButton color="#EF5350" icon="share-2" text="Animation Translation" nav={props.navigation} target="AnimaTranslationStack" />
-          <ItemButton color="#EF5350" icon="layout" text="Custom Tabbar" nav={props.navigation} target="CustomTabbar" />
-          <ItemButton color="#EF5350" icon="layout" text="Wave animation" nav={props.navigation} target="WaveAnimationScreen" />
+          <ItemButton color="#F44336" icon="corner-right-up" text="Custom Tabbar" nav={props.navigation} target="CustomTabbar" />
+          <ItemButton color="#E53935" icon="image" text="Wave animation" nav={props.navigation} target="WaveAnimationScreen" />
+          <ItemButton color="#F44336" icon="layout" text="Header Animation" nav={props.navigation} target="HeaderAnimation" />
+          <ItemButton color="#D32F2F" icon="smartphone" text="Lottie Test" nav={props.navigation} target="LottieTest" />
         </ScrollView>
       </BaseView>
     )

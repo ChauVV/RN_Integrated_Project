@@ -27,6 +27,8 @@ import animationScreen from 'frontend/Screens/AnimationTranslation'
 
 import {BaseNavigator} from 'frontend/Screens/CustomTabbar/navigation'
 import WaveAnimationScreen from 'frontend/Screens/WaveAnimationScreen'
+import LottieTest from 'frontend/Screens/LottieTest'
+import HeaderAnimation from 'frontend/Screens/HeaderAnimation'
 
 const middlewareNav = createReactNavigationReduxMiddleware(
   'root',
@@ -136,7 +138,9 @@ const RootNavigator = createStackNavigator(
     },
     AnimaTranslationStack: { screen: AnimaTranslationStack },
     CustomTabbar: { screen: BaseNavigator },
-    WaveAnimationScreen: { screen: WaveAnimationScreen }
+    WaveAnimationScreen: { screen: WaveAnimationScreen },
+    LottieTest: { screen: LottieTest },
+    HeaderAnimation: { screen: HeaderAnimation }
   }, {
     headerMode: 'none'
   }

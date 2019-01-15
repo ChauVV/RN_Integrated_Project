@@ -8,7 +8,7 @@
     "lint": "npm run lint:js",
     "lint:eslint": "eslint --ignore-path .gitignore --ignore-pattern internals/scripts --ignore-pattern generated.*",
     "validate": "npm ls",
-    "reset": "rm -rf ./node_modules && rm -rf $TMPDIR/react-* && rm -rf ./ios/build && yarn cache clean && npm install",
+    "reset": "rm -rf ./node_modules && rm -rf $TMPDIR/react-* && rm -rf ./ios/build && yarn cache clean && npm install --save",
     "and": "react-native run-android",
     "ios": "react-native run-ios --simulator=\"iPhone 6\"",
     "ipad": "react-native run-ios --simulator=\"iPad Air 2\"",
@@ -17,6 +17,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "lodash": "^4.17.11",
+    "lottie-react-native": "^2.5.11",
     "prop-types": "^15.6.2",
     "react": "16.6.3",
     "react-native": "0.57.8",
