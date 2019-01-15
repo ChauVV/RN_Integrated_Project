@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/pink</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <!-- Splash Screen theme. -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- <item name="android:windowBackground">@drawable/splash_background</item> -->
+        <item name="android:statusBarColor">@color/pink</item>
+    </style>
+</resources>
