@@ -9,10 +9,14 @@ import { connect } from 'react-redux'
 import { COLORS, height, ISIOS, width } from 'utils/globalStyles'
 import { actionsType, RouteKey } from 'utils/globalConstants'
 import PropTypes from 'prop-types'
+import XButton from 'frontend/Components/XButton'
 
 class LoginScreen extends Component {
   constructor (props) {
     super(props)
+    this.state = ({
+      count: 0
+    })
     BackHandler.addEventListener('hardwareBackPress', this.onBackPress)
   }
   componentDidMount () {
@@ -55,6 +59,14 @@ class LoginScreen extends Component {
             style={styles.btnLogin}>
             <Text style={styles.txtBtn}>Login</Text>
           </TouchableOpacity>
+          <XButton
+            style={[styles.btnLogin, { marginTop: 20 }]}
+            onPress={() => {
+              console.log('Click xButton ...')
+              this.setState({count: this.state.count + 1})
+            }}>
+            <Text style={styles.txtBtn}>Muiltible Click: {this.state.count} times</Text>
+          </XButton>
         </View>
       </BaseView>
     )
