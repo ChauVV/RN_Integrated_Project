@@ -30,6 +30,7 @@ import {BaseNavigator} from 'frontend/Screens/CustomTabbar/navigation'
 import WaveAnimationScreen from 'frontend/Screens/WaveAnimationScreen'
 import LottieTest from 'frontend/Screens/LottieTest'
 import HeaderAnimation from 'frontend/Screens/HeaderAnimation'
+import ChatBot from 'frontend/Screens/ChatBot'
 import CenterTab from './CenterTab'
 
 let refNoti = null
@@ -161,7 +162,8 @@ const RootNavigator = createStackNavigator(
     CustomTabbar: { screen: BaseNavigator },
     WaveAnimationScreen: { screen: WaveAnimationScreen },
     LottieTest: { screen: LottieTest },
-    HeaderAnimation: { screen: HeaderAnimation }
+    HeaderAnimation: { screen: HeaderAnimation },
+    ChatBot: { screen: ChatBot }
   }, {
     headerMode: 'none'
   }
