@@ -2,6 +2,7 @@ import Authen from 'frontend/Containers/Authen'
 import Detail from 'frontend/Screens/Detail'
 import DrawerContent from 'frontend/Screens/DrawerContent'
 import HomeScreen from 'frontend/Screens/HomeScreen'
+import CenterScreen from 'frontend/Screens/CenterScreen'
 import LoginScreen from 'frontend/Screens/LoginScreen'
 import Setting from 'frontend/Screens/Setting'
 import React from 'react'
@@ -12,7 +13,7 @@ import {
   reduxifyNavigator
 } from 'react-navigation-redux-helpers'
 import { connect } from 'react-redux'
-import { RouteKey } from 'utils/globalConstants'
+import { RouteKey, actionsType } from 'utils/globalConstants'
 import transition from './transitions'
 
 import SharedElements from 'frontend/Screens/AnimationTranslation/SharedElements'
@@ -29,6 +30,9 @@ import {BaseNavigator} from 'frontend/Screens/CustomTabbar/navigation'
 import WaveAnimationScreen from 'frontend/Screens/WaveAnimationScreen'
 import LottieTest from 'frontend/Screens/LottieTest'
 import HeaderAnimation from 'frontend/Screens/HeaderAnimation'
+import CenterTab from './CenterTab'
+
+let refNoti = null
 
 const middlewareNav = createReactNavigationReduxMiddleware(
   'root',
@@ -48,6 +52,7 @@ const HomeStack = createStackNavigator(
 const MainTabbar = createBottomTabNavigator(
   {
     Home: HomeStack,
+    Apps: CenterScreen,
     Settings: Setting
   },
   {
@@ -58,6 +63,8 @@ const MainTabbar = createBottomTabNavigator(
         let iconName = ''
         if (routeName === RouteKey.Home) {
           iconName = `ios-home`
+        } else if (routeName === RouteKey.Apps) {
+          return <CenterTab ref={ ref => { refNoti = ref }} focused={focused}/>
         } else if (routeName === RouteKey.Settings) {
           iconName = `ios-settings`
         }
@@ -88,6 +95,20 @@ MainTabbar.navigationOptions = ({ navigation }) => {
   if (activeRoute.routeName === RouteKey.HomeScreen || activeRoute.routeName === RouteKey.Settings) {
     // Only open drawer for 2 these screen
     drawerLockMode = 'unlocked'
+  }
+  /**
+   * If tab center,
+   * count notifications from redux state
+   * reduce notifications -1
+   */
+  if (activeRoute.routeName === RouteKey.Apps) {
+    if (refNoti && refNoti.store !== undefined) {
+      const { notifications } = refNoti.store.getState()
+      if (notifications && notifications.length > 0) {
+        const copyArr = notifications.slice(0, notifications.length - 1)
+        refNoti.store.dispatch({ type: actionsType.SET_NOTIFICATIONS, payload: copyArr })
+      }
+    }
   }
   return {
     drawerLockMode

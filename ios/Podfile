@@ -19,6 +19,13 @@ target 'RN_Integrated_Project' do
     ]
 
   pod 'lottie-react-native', :path => '../node_modules/lottie-react-native'
+
+  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+
+  pod 'RNSVG', :path => '../node_modules/react-native-svg'
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
   pod 'lottie-ios', :path => '../node_modules/lottie-ios'
 
 end

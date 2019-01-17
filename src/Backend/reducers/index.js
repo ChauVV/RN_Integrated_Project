@@ -5,6 +5,7 @@ import currencyReducer from './currencyReducer'
 import languageReducer from './languageReducer'
 import loadingReducer from './loadingReducer'
 import routesReducer from './routersReducer'
+import notificationsReducer from './notificationsReducer'
 
 export default combineReducers({
   currency: currencyReducer,
@@ -12,5 +13,6 @@ export default combineReducers({
   loading: loadingReducer,
   navigate: routesReducer,
   authen: authenReducer,
-  clientState: clientReducer
+  clientState: clientReducer,
+  notifications: notificationsReducer
 })

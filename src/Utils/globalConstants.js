@@ -7,6 +7,7 @@ export const RouteKey = {
   Detail: 'Detail',
   Drawer: 'Drawer',
   Home: 'Home',
+  Apps: 'Apps',
   Settings: 'Settings'
 }
 export const KeyStore = {
@@ -35,6 +36,8 @@ export const actionsType = {
   FETCH_CLIENT_SUCCESS: 'FETCH_CLIENT_SUCCESS',
   UPDATE_CLIENT_SUCCESS: 'UPDATE_CLIENT_SUCCESS',
   CANCEL_FETCHING_CLIENT: 'CANCEL_FETCHING_CLIENT',
+  // Notifications
+  SET_NOTIFICATIONS: 'SET_NOTIFICATIONS',
   // Loading
   SHOW_LOADING_ICON: 'SHOW_LOADING_ICON',
   HIDE_LOADING_ICON: 'HIDE_LOADING_ICON',
@@ -58,7 +61,8 @@ export const initState = {
     token: '',
     displayName: '',
     Avatar: null
-  }
+  },
+  notifications: [3, 4, 2]
 }
 /**
  * TIME_OUT: 30s
