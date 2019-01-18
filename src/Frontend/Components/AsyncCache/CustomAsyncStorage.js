@@ -1,6 +1,3 @@
-/**
- * #From: https://github.com/tiaanduplessis/react-native-modest-storage
- */
 
 import { AsyncStorage } from 'react-native'
 

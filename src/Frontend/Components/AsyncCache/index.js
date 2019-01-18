@@ -1,6 +1,4 @@
-/**
- * #From: https://github.com/ChauVV/react-native-modest-cache
- */
+
 import storage from './CustomAsyncStorage'
 
 const prefix = 'cache-'
