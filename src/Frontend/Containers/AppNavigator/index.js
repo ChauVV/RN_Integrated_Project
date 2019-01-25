@@ -5,9 +5,9 @@ import HomeScreen from 'frontend/Screens/HomeScreen'
 import CenterScreen from 'frontend/Screens/CenterScreen'
 import LoginScreen from 'frontend/Screens/LoginScreen'
 import Setting from 'frontend/Screens/Setting'
-import React from 'react'
 import Icon from 'react-native-vector-icons/Ionicons'
 import { createBottomTabNavigator, createDrawerNavigator, createStackNavigator } from 'react-navigation'
+import React, { createRef } from 'react'
 import {
   createReactNavigationReduxMiddleware,
   reduxifyNavigator
@@ -32,6 +32,8 @@ import LottieTest from 'frontend/Screens/LottieTest'
 import HeaderAnimation from 'frontend/Screens/HeaderAnimation'
 import ChatBot from 'frontend/Screens/ChatBot'
 import CenterTab from './CenterTab'
+
+// import ScalingDrawer from 'react-native-scaling-drawer'
 
 let refNoti = null
 
@@ -115,7 +117,31 @@ MainTabbar.navigationOptions = ({ navigation }) => {
     drawerLockMode
   }
 }
+export const drawer = createRef()
+// const defaultScalingDrawerConfig = {
+//   scalingFactor: 0.6,
+//   minimizeFactor: 0.6,
+//   swipeOffset: 20
+// }
 
+// const Drawer = (props) => {
+//   return (
+//     <ScalingDrawer
+//       ref={drawer}
+//       content={<DrawerContent drawer={drawer} />}
+//       {...defaultScalingDrawerConfig}
+//       onClose={() => console.log('close')}
+//       onOpen={() => console.log('open')}
+//     >
+//       <MainTabbar
+//         {...props}
+//         // ref={navigatorRef => {
+//         //   NavigationService.setTopLevelNavigator(navigatorRef)
+//         // }}
+//       />
+//     </ScalingDrawer>
+//   )
+// }
 const Drawer = createDrawerNavigator(
   {
     MainTabbar: {
