@@ -27,6 +27,7 @@ export default class Setting extends Component {
           <ItemButton color="#F44336" icon="layout" text="Header Animation" nav={props.navigation} target="HeaderAnimation" />
           <ItemButton color="#D32F2F" icon="smartphone" text="Lottie Test" nav={props.navigation} target="LottieTest" />
           <ItemButton color="#D32F2F" icon="message-square" text="ChatBot" nav={props.navigation} target="ChatBot" />
+          <ItemButton color="#D32F2F" icon="smartphone" text="Image Album Picker" nav={props.navigation} target="ImageAlbumPicker" />
         </ScrollView>
       </BaseView>
     )

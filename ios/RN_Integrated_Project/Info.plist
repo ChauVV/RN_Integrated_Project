@@ -39,6 +39,12 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string/>
+	<key>NSCameraUsageDescription</key>
+	<string>App need to use Camera</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>App wants to save photos</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>App need to use Photo Library</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Roboto-Bold.ttf</string>

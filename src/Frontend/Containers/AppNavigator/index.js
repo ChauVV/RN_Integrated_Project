@@ -31,6 +31,7 @@ import WaveAnimationScreen from 'frontend/Screens/WaveAnimationScreen'
 import LottieTest from 'frontend/Screens/LottieTest'
 import HeaderAnimation from 'frontend/Screens/HeaderAnimation'
 import ChatBot from 'frontend/Screens/ChatBot'
+import ImageAlbumPicker from 'frontend/Screens/ImageAlbumPicker'
 import CenterTab from './CenterTab'
 
 // import ScalingDrawer from 'react-native-scaling-drawer'
@@ -189,7 +190,8 @@ const RootNavigator = createStackNavigator(
     WaveAnimationScreen: { screen: WaveAnimationScreen },
     LottieTest: { screen: LottieTest },
     HeaderAnimation: { screen: HeaderAnimation },
-    ChatBot: { screen: ChatBot }
+    ChatBot: { screen: ChatBot },
+    ImageAlbumPicker: { screen: ImageAlbumPicker }
   }, {
     headerMode: 'none'
   }

@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -50,6 +51,7 @@
 		8045FBD1B5B249EC84D15DB4 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F49BB843548646BCBD1578ED /* Feather.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		83D0877BD1264921823D5E5F /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16E800FFE2184FC69B082667 /* Roboto-LightItalic.ttf */; };
+		88A132E32212A5C9007E681F /* libRCTCameraRoll.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A132E22212A5C9007E681F /* libRCTCameraRoll.a */; };
 		8ED4984F6D7A42F0BF3B21AA /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6655920739E4FA6B6AB5D3B /* AntDesign.ttf */; };
 		A530D1D52495405BBED8346C /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9F82D7E847F4E158D965DF2 /* Entypo.ttf */; };
 		A584EC0D535D4633A2384161 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05614D59DB99485D90A504EE /* MaterialIcons.ttf */; };
@@ -373,6 +375,7 @@
 		78DA71667E7A4246824BF177 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		78E8758316C19DBF2701ED2C /* Pods-RN_Integrated_Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_Integrated_Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RN_Integrated_Project/Pods-RN_Integrated_Project.debug.xcconfig"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		88A132E22212A5C9007E681F /* libRCTCameraRoll.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRCTCameraRoll.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A36AB186576473E899A3766 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		904EFFEC99FE4AC3BE540FD4 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BoldItalic.ttf"; path = "../src/Assets/Font/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
 		A64BB63E2FFF445EA1EE4C4E /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../src/Assets/Font/Roboto-Regular.ttf"; sourceTree = "<group>"; };
@@ -403,6 +406,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88A132E32212A5C9007E681F /* libRCTCameraRoll.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -564,6 +568,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				88A132E22212A5C9007E681F /* libRCTCameraRoll.a */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
 				3E240C560E43B06014D418B8 /* libPods-RN_Integrated_Project.a */,
 			);
